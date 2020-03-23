@@ -53,6 +53,7 @@ class Song
     split_filemane = filename.chomp(."mp3").split(" - ")
     song.name = split_filemane[1]
     song.artist_name = split_filemane[0]
+    song.save
     song
   end
 end
